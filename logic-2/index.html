@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon_rubix.png" type="image/x-icon">
+    <title>Second attempt at Logic fanpage</title>
+</head>
+<body>
+    <!-- To make sure nothing goes outside of the screen -->
+    <div class="wrapper">
+
+        <!-- Landing page parallax with header (logo and animated button) and logic quote -->
+        <div class="screen-cover-parallax">
+            <!-- header used as grid to place logo and menu in -->
+            <div class="header">
+                <div class="header-logo header-item">
+                    <img id="option-1" src="./img/logo-2.png" alt="Logic"  onclick="showQuote()">
+                </div>
+                <!-- creating the animated header button, ccoh for color change on hover -->
+                <div class="header-menu header-item" onclick="menuAnimation(this)">
+                    <div id="ccoh" class="menu-1"></div>
+                    <div id="ccoh" class="menu-2"></div>
+                    <div id="ccoh" class="menu-3"></div>
+                    <div id="ccoh" class="menu-4"></div>
+                </div>
+            </div>
+            <!-- Still in parallax container -->
+            <div id="toggle" class="logic-quote">
+                    <h1 id="q-mark">"</h1><p> ..here’s my message: peace, love, positivity. Follow your dreams. These are my raps. This is my style. This is how I do it.."</p>
+                </div>
+        </div>
+
+        <!-- Bio section -->
+        <div  class="screen-cover-bio">
+
+            <div class="bio-main">
+                <a href="https://en.wikipedia.org/wiki/Logic_(musician)" target="_blank"><h1 class="bio-header">ABOUT BOBBY</h1></a>
+                <p class="bio-body">Robert Bryson Hall is an American rapper, singer, songwriter and music producer better known by his stage name Logic. Coming from a broken family, he has had unfortunate experiences as a child. Growing up, he witnessed his brothers selling drugs, his father buying those drugs, his alcoholic mother and sisters getting beaten up by men. However, even at that age, he tried to see the positivity of the situation and made those experiences a lesson as to what not to do with his own life. To escape his abusive mother, he left home when he was 17 years old and took up two odd jobs. He found relief through music, and started to express himself with his raps. He doesn't shy away from writing about his experiences in his songs, which makes most of his songs extremely personal, but he never glorifies his tumultuous upbringing. He has been heavily influenced by Frank Sinatra's vocal jazz, even though he is more into hip-hop music. Quentin Tarantino has been another big influence on him. He got recognition through his mixtapes, 'Young, Broke & Infamous' and the 'Young Sinatra' trilogy. Both his studio albums, 'Under Pressure' and 'The Incredible True Story', have received critical and commercial success.</p>
+            </div>
+        </div>
+
+        <!-- Slide # -->
+        <div class="slide slide-1">
+            <!-- Albumn slider -->
+            <div class="page-slider-container">
+
+                <!-- Left portion of the slider -->
+                <div class="slide-left">
+                    <!-- Scrolling album cover -->
+                    <div class="slide-top-left album-cover">
+                        <!-- Left arrow -->
+                        <button class="arrow arrow-left" onclick="slideLeft()"><img src="./img/arrow.png" alt="Prev"></button>
+                        <!-- album cover -->
+                        <img src="./img/albumCover/albumcover-1.jpg" alt="Bobby Tarantino">
+                        <!-- Right arrow -->
+                        <button class="arrow arrow-right" onclick="slideRight()"><img src="./img/arrow.png" alt="Next"></button>
+                    </div>
+
+                    <!-- Media icon buttons -->
+                    <div class="slide-bottom-left">
+                        <section class="icon-list">
+
+                            <button class="icon-button spfy-button"></button>
+                            <button class="icon-button yt-button"></button>
+                            <button class="icon-button instgrm-button"></button>
+                            <button class="icon-button schat-button"></button>
+                        
+                        </section>
+                    </div>
+                </div>
+                <!-- Right portion of the slider -->
+                <div class="slide-middle">
+                    <div class="slide-top-middle album-name">
+                        <h1>Bobby Tarantino</h1>
+                    </div>
+                    <div class="slide-bottom-middle album-desc">
+                        <p>Bobby Tarantino is the fifth mixtape by American rapper Logic. It was released on July 1, 2016, by Visionary Music Group and Def Jam Recordings. It was released to various digital platforms without prior announcement. Bobby Tarantino serves as Logic's first mixtape since Young Sinatra: Welcome to Forever. The mixtape and its production was handled primarily by Logic and 6ix, with the duo focusing on a similar style to that of their previous independent projects, working on reinstating previous elements considered missing from Logic's commercial releases. The mixtape was preceded by the release of "Flexicution" and "Wrist", released ten days apart from one another.
+
+                                Bobby Tarantino received generally positive reviews from critics, with particular attention being drawn to its production and varied nature, as well as Logic's newly found braggadocio. Criticism was directed at basic lyricism and a lack of depth that was associated with Logic's preceding releases. It was labeled the "perfect fill in for his junior album".</p>
+                    </div>
+                    <!-- Right portion of the slider (spotify/yt) -->
+                    <iframe id="spotify" src="https://open.spotify.com/embed/album/0WMr3ulx5Mzi1B3C8LsHVA" frameborder="0" allowtransparency="true"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Slide # -->
+        <div class="slide slide-2">
+            <!-- Albumn slider -->
+            <div class="page-slider-container">
+                            
+                <!-- Left portion of the slider -->
+                <div class="slide-left">
+                    <!-- Scrolling album cover -->
+                    <div class="slide-top-left album-cover">
+                        <!-- Left arrow -->
+                        <button class="arrow arrow-left" onclick="slideLeft()"><img src="./img/arrow.png" alt="Prev"></button>
+                        <!-- album cover -->
+                        <img src="./img/albumCover/albumcover-2.jpg" alt="The Incredible True Story">
+                        <!-- Right arrow -->
+                        <button class="arrow arrow-right" onclick="slideRight()"><img src="./img/arrow.png" alt="Next"></button>
+                    </div>
+
+                    <!-- Media icon buttons -->
+                    <div class="slide-bottom-left">
+                        <section class="icon-list">
+
+                            <button class="icon-button spfy-button"></button>
+                            <button class="icon-button yt-button"></button>
+                            <button class="icon-button instgrm-button"></button>
+                            <button class="icon-button schat-button"></button>
+                        
+                        </section>
+                    </div>
+                </div>
+                <!-- Right portion of the slider -->
+                <div class="slide-middle">
+                    <div class="slide-top-middle album-name">
+                        <h1>The Incredible True Story</h1>
+                    </div>
+                    <div class="slide-bottom-middle album-desc">
+                        <p>The Incredible True Story is the second studio album by American rapper Logic. It was released on November 13, 2015, by Visionary Music Group and Def Jam Recordings. Recording sessions took place upon the completion and the release of Under Pressure, from late 2014 to early 2015. The album saw extensive production by Logic along with a variety of contributors, including 6ix, Stefan Ponce, Sir Dylan, Syk Sense, OZ and DJ Dahi. The album also saw limited appearances from guest vocalists, with Big Lenbo, Lucy Rose, Dria and Jesse Boykins III being credited with guest appearances. It was supported by three singles: "Young Jesus", "Like Woah" and "Fade Away". Each song was released to coincide with a three-week delay.</p>
+                    </div>
+                    <!-- Right portion of the slider (spotify/yt) -->
+                    <iframe id="spotify" src="https://open.spotify.com/embed/album/5dOpbgAmJeyoakKQ0QLWkR" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Slide # -->
+        <div class="slide slide-3">
+            <!-- Albumn slider -->
+            <div class="page-slider-container">
+
+                <!-- Left portion of the slider -->
+                <div class="slide-left">
+                    <!-- Scrolling album cover -->
+                    <div class="slide-top-left album-cover">
+                        <!-- Left arrow -->
+                        <button class="arrow arrow-left" onclick="slideLeft()"><img src="./img/arrow.png" alt="Prev"></button>
+                        <!-- album cover -->
+                        <img src="./img/albumCover/albumcover-3.jpg" alt="Everybody">
+                        <!-- Right arrow -->
+                        <button class="arrow arrow-right" onclick="slideRight()"><img src="./img/arrow.png" alt="Next"></button>
+                    </div>
+
+                    <!-- Media icon buttons -->
+                    <div class="slide-bottom-left">
+                        <section class="icon-list">
+
+                            <button class="icon-button spfy-button"></button>
+                            <button class="icon-button yt-button"></button>
+                            <button class="icon-button instgrm-button"></button>
+                            <button class="icon-button schat-button"></button>
+                        
+                        </section>
+                    </div>
+                </div>
+                <!-- Right portion of the slider -->
+                <div class="slide-middle">
+                    <div class="slide-top-middle album-name">
+                        <h1>Everybody</h1>
+                    </div>
+                    <div class="slide-bottom-middle album-desc">
+                        <p>Maryland rapper Logic’s new album, Everybody, is a strangely faithful adaptation of the short story with an emphasis on the endless cycle of reincarnations that’d eventually—hypothetically—cause everyone to be different incarnations of the same person. He weaves his own struggles with race and religion into a complex, panoramic view of humanity, seeking a unified theory of equality, not just for his mortal coil but for the cosmos. If this seems convoluted that’s because it is: Weir’s story was meant as a fanciful (albeit thoughtful) work of fiction, not an intersectional parable. “Every time you victimized someone you were victimizing yourself,” the short story goes. “Every act of kindness you’ve done, you’ve done to yourself.” This is Everybody’s central conceit: We are all the same, and every misdeed hurts the human race equally. Logic gets even more literal in the subtext, drawing parallels between this life force balance and his mixed-race heritage. Herein, an existential crisis unfolds.</p>
+                    </div>
+                    <!-- Right portion of the slider (spotify/yt) -->
+                    <iframe id="spotify" src="https://open.spotify.com/embed/album/1HiN2YXZcc3EjmVZ4WjfBk" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+         <!-- Slide # -->
+         <div class="slide slide-4">
+            <!-- Albumn slider -->
+            <div class="page-slider-container">
+
+                <!-- Left portion of the slider -->
+                <div class="slide-left">
+                    <!-- Scrolling album cover -->
+                    <div class="slide-top-left album-cover">
+                        <!-- Left arrow -->
+                        <button class="arrow arrow-left"  onclick="slideLeft()"><img src="./img/arrow.png" alt="Prev"></button>
+                        <!-- album cover -->
+                        <img src="./img/albumCover/albumcover-4.jpg" alt="Under Pressure">
+                        <!-- Right arrow -->
+                        <button class="arrow arrow-right" onclick="slideRight()"><img src="./img/arrow.png" alt="Next"></button>
+                    </div>
+
+                    <!-- Media icon buttons -->
+                    <div class="slide-bottom-left">
+                        <section class="icon-list">
+
+                            <button class="icon-button spfy-button"></button>
+                            <button class="icon-button yt-button"></button>
+                            <button class="icon-button instgrm-button"></button>
+                            <button class="icon-button schat-button"></button>
+                        
+                        </section>
+                    </div>
+                </div>
+                <!-- Right portion of the slider -->
+                <div class="slide-middle">
+                    <div class="slide-top-middle album-name">
+                        <h1>Under Pressure</h1>
+                    </div>
+                    <div class="slide-bottom-middle album-desc">
+                        <p>Under Pressure is the debut studio album by American rapper Logic. It was released on October 21, 2014, by Visionary Music Group and Def Jam Recordings. Development and composition of the album began in 2013, with recording taking place during a two-week span at the beginning of 2014. The album's production was primarily handled by No I.D., with smaller contributions from a variety of record producers, including 6ix, DJ Dahi, DJ Khalil, S1, Jake One and Dun Deal. The standard edition of the album contained no guest appearances, with Big Sean and Childish Gambino being featured on tracks "Alright" and "Driving Ms. Daisy", respectively, on the album's deluxe edition.
+
+                                Logic sought to create an album that would stand out as "beautiful, musical and melodic" while also including "raw lyricism". In order to establish his desired sound, his lyricism is heavily introspective, analyzing himself by exploring his ambivalent outlook on his newfound fame, his family, feelings of self-consciousness, success, and his struggles with addiction. His goal was to provide an autobiography which explicitly detailed the scenarios and experiences that impacted him during his rise in the music industry. The album was supported by two singles: "Under Pressure" and "Buried Alive", each focusing on Logic's struggles both due to and aside from his musical career.</p>
+                    </div>
+                    <!-- Right portion of the slider (spotify/yt) -->
+                    <iframe id="spotify" src="https://open.spotify.com/embed/album/1Mk7Lei0Ra3hawezqmad5V" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="icon-ref">
+            <h1>Website built by Caleb Sears</h1> <br>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/wissawa-khamsriwath" title="Wissawa Khamsriwath">Wissawa Khamsriwath</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        </div>      
+    
+    </div>
+
+<script src="logic.js"></script>
+</body>
+</html>
